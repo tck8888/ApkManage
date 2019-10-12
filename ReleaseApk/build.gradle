@@ -1,0 +1,38 @@
+plugins {
+    id 'groovy'
+    id 'maven'
+}
+
+group 'com.yaoyanshe.android.plugin'
+version '1.0.8'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: 'http://tck8888:9000/repository/yys-android-plugin-uploadapk/') {
+                authentication(userName: 'admin', password: '!380054728mnb')
+            }
+            pom.project {
+                groupId = this.group
+                artifactId = 'uploadApkPlugin'
+                version = this.version
+                description '上传apk组件'
+            }
+        }
+
+    }
+}
+
+dependencies {
+
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation("com.squareup.okhttp3:okhttp:3.14.4")
+}
