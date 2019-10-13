@@ -1,0 +1,2 @@
+include ':app', ':yrouter-compiler', ':yrouter-api', ':yrouter-annotation', ':buildSrc'
+rootProject.name='YRouter'
