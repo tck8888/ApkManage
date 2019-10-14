@@ -1,4 +1,4 @@
-package com.yaoyanshe.android.plugin
+package com.tck.android.plugin
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project

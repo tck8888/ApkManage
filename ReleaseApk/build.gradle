@@ -3,7 +3,7 @@ plugins {
     id 'maven'
 }
 
-group 'com.yaoyanshe.android.plugin'
+group 'com.tck.android.plugin'
 version '1.0.8'
 
 sourceCompatibility = 1.8
