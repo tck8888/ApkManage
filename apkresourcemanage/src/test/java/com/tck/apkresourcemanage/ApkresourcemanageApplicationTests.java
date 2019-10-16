@@ -30,4 +30,13 @@ public class ApkresourcemanageApplicationTests {
         System.err.println(file.getAbsolutePath());
     }
 
+
+    @Test
+    public void testAPkPath(){
+        File file = new File("E:\\android_project\\TrialField_Android\\app\\build\\outputs\\apk\\dia\\debug\\");
+        File[] files = file.listFiles();
+        for (int i = 0; i < files.length; i++) {
+            System.err.println(files[i].getAbsolutePath());
+        }
+    }
 }
